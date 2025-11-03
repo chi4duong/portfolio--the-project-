@@ -1,0 +1,12 @@
+{
+  "name": "yatzy-lab7-server",
+  "version": "1.0.0",
+  "description": "Express server for Yatzy Lab 7 (dice endpoint + static client)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
