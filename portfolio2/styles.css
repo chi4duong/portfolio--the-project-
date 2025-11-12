@@ -409,3 +409,38 @@ body{
 :root:not([data-theme="dark"]) .muted { color: #4B5563; }
 
 /* Ensure card body text doesn’t inherit a too-light colo*
+
+
+
+/* ---- Hero image layout ---- */
+.hero_grid{
+  display:grid;
+  gap: var(--gap-lg);
+  grid-template-columns: 1.1fr .9fr; /* text | image */
+  align-items: center;
+}
+@media (max-width: 980px){
+  .hero_grid{ grid-template-columns: 1fr; }
+}
+
+.hero_media{
+  margin:0;
+  border-radius: var(--r-lg);
+  overflow:hidden;
+  box-shadow: var(--shadow);
+  border:1px solid var(--border);
+  background: var(--card);
+}
+
+.hero_img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio: 4 / 3;          /* keep layout stable; remove if you prefer natural ratio */
+  object-fit: cover;
+}
+
+/* Slightly tighten hero on very small screens */
+@media (max-width: 560px){
+  .hero_img{ aspect-ratio: 16 / 9; }
+}
