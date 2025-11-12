@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chi Duong — Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- ========== Header / Nav ========== -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#top" aria-label="Go to top">
-          <span class="brand_dot" aria-hidden="true"></span>
-          <span class="brand_text">Chi Duong</span>
-        </a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chi Duong — Portfolio</title>
+  <meta name="description" content="Chi Duong — student portfolio in Web & Digital Health. Projects in accessible web UI, Yatzy game, and SQL fundamentals.">
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
 
-        <nav class="nav" aria-label="Primary">
-          <button class="nav_toggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
-          <ul id="navMenu" class="nav_list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact" class="btn btn--primary">Contact</a></li>
-<li><a href="client/index.html" target="_blank" rel="noopener noreferrer">Yatzy Game</a></li>
+<body>
+  <a class="visually-hidden" href="#main">Skip to content</a>
 
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand_dot" aria-hidden="true"></span>
+        <span class="brand_text">Chi Duong</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav_toggle" aria-expanded="false" aria-controls="navMenu">Menu</button>
+        <ul id="navMenu" class="nav_list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact" class="btn btn--primary">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">Theme: Auto</button>
+          </li>
+          <li><a href="client/index.html" target="_blank" rel="noopener noreferrer">Yatzy Game</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- ========== Hero ========== -->
+  <main id="main">
+    <!-- Hero -->
     <section id="top" class="hero">
       <div class="container hero_grid">
         <div class="hero_text">
           <h1>Student Portfolio — Web & Digital Health</h1>
-          <p>
-            I’m Chi, a Bachelor of Technology (Digital Health) student at Algonquin College. I build
-            accessible, responsive web interfaces and explore technology that improves patient and
-            provider experiences.
-          </p>
+          <p>I’m Chi, a Bachelor of Technology (Digital Health) student at Algonquin College. I build accessible, responsive web interfaces and explore technology that improves patient and provider experiences.</p>
           <div class="hero_cta">
             <a href="#projects" class="btn btn--primary">View Projects</a>
             <a href="#contact" class="btn btn--ghost">Get In Touch</a>
@@ -50,15 +53,11 @@
       </div>
     </section>
 
-    <!-- ========== About ========== -->
+    <!-- About -->
     <section id="about" class="section">
       <div class="container">
         <h2>About Me</h2>
-        <p>
-          Curious, collaborative, and detail-oriented. I enjoy working in teams, communicating clearly,
-          and learning fast. Comfortable with HTML, CSS, basic JavaScript, and SQL fundamentals.
-          Languages: English & Vietnamese.
-        </p>
+        <p>Curious, collaborative, and detail-oriented. I enjoy working in teams, communicating clearly, and learning fast. Comfortable with HTML, CSS, basic JavaScript, and SQL fundamentals. Languages: English & Vietnamese.</p>
         <ul class="chiplist" aria-label="Skills">
           <li class="chip">HTML</li>
           <li class="chip">CSS</li>
@@ -70,52 +69,63 @@
       </div>
     </section>
 
-    <!-- ========== Projects (Coming Soon) ========== -->
+    <!-- Projects -->
     <section id="projects" class="section section_alt">
       <div class="container">
         <div class="section_head">
           <h2>Projects</h2>
-          <p class="muted">These are my projects</p>
+          <p class="muted">A few of my practical web projects</p>
         </div>
-
-        <div class="grid projects projects_placeholder">
+        <div class="grid projects">
           <article class="card">
             <div class="card_body">
-              <h3 class="card_title">Yatzy Game(Web)</h3>
-              <p class="card_desc">A browser-based Yatzy with accessible UI, score logic, and optional server dice rolls.</p>
-<p><a class="btn btn--ghost" href="client/index.html" target="_blank" rel="noopener noreferrer">Open Yatzy</a></p>
+              <h3 class="card_title">Yatzy Game (Web)</h3>
+              <p class="card_desc">A browser-based Yatzy game built with HTML, CSS, JavaScript, and Node.js (Express). Includes accessible UI, scoring logic, and optional server dice rolls.</p>
+              <ul class="chiplist">
+                <li class="chip">JavaScript</li><li class="chip">Express</li><li class="chip">Accessibility</li>
+              </ul>
+              <p><a class="btn btn--ghost" href="client/index.html" target="_blank" rel="noopener noreferrer">Open Yatzy</a></p>
+            </div>
+          </article>
 
+          <article class="card">
+            <div class="card_body">
+              <h3 class="card_title">Portfolio Website</h3>
+              <p class="card_desc">Design system–based portfolio using CSS tokens, semantic HTML, and responsive grids.</p>
+              <ul class="chiplist">
+                <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">Design System</li>
+              </ul>
+              <p><a class="btn btn--ghost" href="#top">View</a></p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ========== Resume ========== -->
+    <!-- Resume -->
     <section id="resume" class="section section_alt">
       <div class="container">
         <h2>Resume</h2>
-
         <div class="grid grid_2">
           <div>
             <h3>Education</h3>
-            <p><strong>Computer Programming and Analysis</strong>, Algonquin College, Ottawa ON</p>
-            <p>September 2023 – April 2024</p>
-            <p><strong>Bachelor of Technology (Digital Health)</strong>, Algonquin College, Ottawa ON</p>
-            <p>September 2024 – Present</p>
+            <p><strong>Computer Programming and Analysis</strong>, Algonquin College (Sept 2023 – Apr 2024)</p>
+            <p><strong>Bachelor of Technology (Digital Health)</strong>, Algonquin College (Sept 2024 – Present)</p>
             <p>GPA: 3.2 / 4.0</p>
-            <p><strong>Selected Coursework:</strong> Database (SQL), Web Programming (HTML, CSS, JavaScript, PHP), Technical Communications, Object-Oriented Programming (Java)</p>
+            <ul class="ticks">
+              <li>Database (SQL)</li>
+              <li>Web Programming (HTML, CSS, JS, PHP)</li>
+              <li>Technical Communications</li>
+              <li>Object-Oriented Programming (Java)</li>
+            </ul>
           </div>
-
           <div>
             <h3>Summary of Qualifications</h3>
             <ul class="ticks">
-              <li>Experienced in group collaboration and teamwork for projects.</li>
-              <li>Professional and efficient workplace communication skills.</li>
-              <li>Strong time management with ability to meet deadlines.</li>
-              <li>Curious and open to new teamwork experiences.</li>
-              <li>Passionate and eager to learn new technologies and skills.</li>
-              <li>Languages: English and Vietnamese</li>
+              <li>Strong collaboration and communication skills.</li>
+              <li>Reliable time management and teamwork.</li>
+              <li>Curious and eager to learn new technologies.</li>
+              <li>Fluent in English and Vietnamese.</li>
             </ul>
           </div>
         </div>
@@ -125,71 +135,107 @@
         <div class="grid grid_2">
           <div>
             <h3>Other Work Experience</h3>
-            <p><strong>Part-time Translator</strong>, Cho Ben Thanh, Ho Chi Minh, Vietnam</p>
-            <p>May 2023 – August 2023</p>
+            <p><strong>Part-time Translator</strong>, Cho Ben Thanh, Ho Chi Minh City (May–Aug 2023)</p>
             <ul class="ticks">
-              <li>Translated between English and Vietnamese for family business in a local market.</li>
-              <li>Assisted in negotiating prices and selling clothes to foreign customers.</li>
-              <li>Adapted to cultural differences to enhance sales performance.</li>
-              <li>Worked collaboratively with team members to improve communication and customer experience.</li>
-              <li>Bridged language barriers between customers and sellers effectively.</li>
+              <li>Translated between English and Vietnamese for family business.</li>
+              <li>Negotiated prices and supported sales with foreign customers.</li>
+              <li>Bridged language barriers and improved customer experience.</li>
             </ul>
           </div>
         </div>
-        <div>
 
-  <h3>Downloads</h3>
-  <p>
-    <a class="btn btn--primary" href="resume_port.pdf" target="_blank" rel="noopener">
-      Download PDF Resume
-    </a>
-  </p>
- 
-</div>
-
+        <h3>Downloads</h3>
+        <p><a class="btn btn--primary" href="resume_port.pdf" target="_blank" rel="noopener">Download PDF Resume</a></p>
       </div>
     </section>
 
-    <!-- ========== Contact ========== -->
+    <!-- Contact -->
     <section id="contact" class="section">
       <div class="container">
         <h2>Contact</h2>
         <div class="contact">
           <p class="lead">Let’s collaborate or chat about your project.</p>
-          <p>
-            <strong>Email:</strong>
+          <p><strong>Email:</strong>
             <a href="mailto:duon0070@algonquinlive.com">duon0070@algonquinlive.com</a>
             &nbsp;•&nbsp;
-            <strong>Phone:</strong> 613-406-1942
+            <strong>Phone:</strong> <a href="tel:+16134061942">613-406-1942</a>
           </p>
           <div class="socials">
-            <a href="#" aria-label="GitHub">GitHub</a>
-            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </div>
     </section>
+  </main>
 
-    <!-- ========== Footer ========== -->
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> Chi Duong. All rights reserved.</p>
-        <a href="#top" class="backtotop">Back to top ↑</a>
-      </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Chi Duong. All rights reserved.</p>
+      <a href="#top" class="backtotop">Back to top ↑</a>
+    </div>
+  </footer>
 
-    <script>
-      // Mobile nav toggle (now matches single-underscore class)
-      const toggle = document.querySelector(".nav_toggle");
-      const list = document.querySelector("#navMenu");
-      if (toggle && list) {
-        toggle.addEventListener("click", () => {
-          const expanded = toggle.getAttribute("aria-expanded") === "true";
-          toggle.setAttribute("aria-expanded", String(!expanded));
-          list.classList.toggle("is-open");
-        });
+  <script>
+    // ----- Mobile nav toggle -----
+    const toggle = document.querySelector(".nav_toggle");
+    const list = document.querySelector("#navMenu");
+    if (toggle && list) {
+      toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!expanded));
+        list.classList.toggle("is-open");
+      });
+    }
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // ----- Theme setup (Auto / Light / Dark) -----
+    const root = document.documentElement;
+    const THEME_KEY = "chi-theme"; // "light" | "dark" | null (auto)
+    const btn = document.getElementById("themeToggle");
+
+    function applyTheme(theme) {
+      if (theme === "dark") {
+        root.setAttribute("data-theme", "dark");
+      } else if (theme === "light") {
+        // Force light by setting an explicit data-theme
+        root.setAttribute("data-theme", "light");
+      } else {
+        // Auto/system: remove explicit override so media query controls it
+        root.removeAttribute("data-theme");
       }
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+    }
+
+    function setButtonLabel(mode) {
+      if (!btn) return;
+      const label = mode === "dark"
+        ? "Theme: Dark"
+        : mode === "light"
+        ? "Theme: Light"
+        : "Theme: Auto";
+      btn.textContent = label;
+    }
+
+    // Initial state
+    const saved = localStorage.getItem(THEME_KEY); // may be null
+    applyTheme(saved);
+    setButtonLabel(saved);
+
+    // Click toggles Light <-> Dark; Shift+Click sets Auto
+    btn?.addEventListener("click", (e) => {
+      const current = localStorage.getItem(THEME_KEY); // "light" | "dark" | null
+      if (e.shiftKey) {
+        localStorage.removeItem(THEME_KEY);       // Auto
+        applyTheme(null);
+        setButtonLabel(null);
+        return;
+      }
+      const next = current === "dark" ? "light" : "dark";
+      localStorage.setItem(THEME_KEY, next);
+      applyTheme(next);
+      setButtonLabel(next);
+    });
+  </script>
+</body>
 </html>
